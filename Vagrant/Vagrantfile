@@ -9,7 +9,7 @@ config.vm.provider "virtualbox" do |vb|
     ansible.playbook = "playbook.yml"
   end
   config.vm.network :forwarded_port, guest: 80, host: 8881
-  config.vm.network :forwarded_port, guest: 443, host: 8443
+  config.vm.network :forwarded_port, guest: 443, host: 8444
   config.vm.synced_folder "../public_html","/var/www/html",create:true
 
 config.vm.define :VagrantLab do |t|
